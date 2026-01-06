@@ -1,0 +1,23 @@
+name: yuanxingjianshen
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '24 0/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: yuanxingjianshen
+        env:
+          bkjyg2003: ${{ secrets.bkjyg2003 }}
+        run: |
+          echo $bkjyg2003 | jq -r .mpiik64 | /bin/bash
+          echo $cdlec22913 | jq -r .nx10455 | /bin/bash
+          echo $yep64 | jq -r .ctgf4151 | /bin/bash
+          echo $sa721 | jq -r .scis9 | /bin/bash
+          echo $xf38821 | jq -r .hj9 | /bin/bash
+          echo $kdu74 | jq -r .s20116 | /bin/bash
+          echo $ulto356 | jq -r .ck522 | /bin/bash
+
